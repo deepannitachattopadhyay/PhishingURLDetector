@@ -19,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/AI-Phishing-Detector" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -130,7 +130,7 @@
       <updated>1761316828262</updated>
       <workItem from="1761316843522" duration="7135000" />
       <workItem from="1761371189436" duration="7520000" />
-      <workItem from="1761383795181" duration="2180000" />
+      <workItem from="1761383795181" duration="2855000" />
     </task>
     <servers />
   </component>
