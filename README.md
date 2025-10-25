@@ -20,6 +20,7 @@ Built with **Python**, **Flask**, **scikit-learn**, and **pandas**.
 - Recall: 95.9%
 - F1 Score: 97.6%
 
+  ![confusionMatrix](https://github.com/user-attachments/assets/1f707324-c3ff-484d-a55f-937fe16745a5)
 ---
 
 ## Project Structure
