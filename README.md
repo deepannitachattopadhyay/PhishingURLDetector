@@ -14,6 +14,14 @@ Built with **Python**, **Flask**, **scikit-learn**, and **pandas**.
 
 ---
 
+## 📊 Accuracy
+- Accuracy: 97.7%
+- Precision: 99.5%
+- Recall: 95.9%
+- F1 Score: 97.6%
+
+---
+
 ## Project Structure
 PhishingURLDetector/
 │
