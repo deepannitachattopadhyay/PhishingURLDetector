@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware & Phishing Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <h2>Malicious Files</h2>
+        <p>Upload a file (PDF/TXT only):</p>
+        <form id="file-upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="file" accept=".pdf,.txt">
+            <button type="submit" class="btn analyze-btn">Analyze</button>
+        </form>
+
+        <div style="margin-top: 30px; border-top: 1px solid #3e4451;"></div>
+
+        <h2>URL Threat Detection</h2>
+        <p>Enter URL:</p>
+        <form id="url-detection-form">
+            <input type="text" id="url-input" placeholder="e.g., https://malicious-site.com">
+            <button type="submit" class="btn classify-btn">Classify</button>
+        </form>
+
+        <div id="url-result" class="result">
+            <p>URL: <span id="displayed-url">https://www.google.com</span></p>
+            <p>Predicted Class: <span id="predicted-class" class="benign">benign</span></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

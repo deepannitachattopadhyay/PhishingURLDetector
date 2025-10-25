@@ -1,0 +1,90 @@
+/* static/style.css */
+
+/* --- General Styling for Dark Theme --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Deep dark background */
+    color: #f5f5f5; /* Light text color */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    min-height: 100vh;
+}
+
+/* --- Main Container (The Card) --- */
+.container {
+    background-color: #282c34; /* Slightly lighter card background */
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #3e4451;
+}
+
+h2 {
+    color: #f5f5f5;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* --- Input and Form Styling --- */
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #3e4451;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+/* --- Button Styling (Green) --- */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.analyze-btn, .classify-btn {
+    background-color: #50a14f; /* Prominent green color */
+    color: white;
+}
+
+.analyze-btn:hover, .classify-btn:hover {
+    background-color: #408840;
+}
+
+/* --- Result Area Styling --- */
+.result {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #3e4451;
+    font-size: 16px;
+    text-align: center;
+}
+
+.result p {
+    margin: 5px 0;
+}
+
+/* Styling for the benign class text */
+.benign {
+    color: #50a14f;
+    font-weight: bold;
+}
+/* <<< PLACE NEW CODE FOR DAY 2 HERE >>> */
+.malicious {
+    color: #e45649; /* Red color for a malicious result or error */
+    font-weight: bold;
+}
