@@ -2,12 +2,11 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import joblib
 import pandas as pd
-from ml_model import extract, features_columns  # ✅ import correct ones
+from ml_model import extract, features_columns
 
 app = Flask(__name__)
 CORS(app)
 
-# Load Model
 model = joblib.load('phishing_model.pkl')
 print("✅ Model loaded successfully!")
 
@@ -24,11 +23,9 @@ def classify_url():
         return jsonify({"error": "No URL provided"}), 400
 
     try:
-        # ✅ correct feature extraction + ordering
         features_dict = extract(url)
         features_df = pd.DataFrame([features_dict])[features_columns]
 
-        # ✅ Proper prediction
         prediction = model.predict(features_df)[0]
         result = "malicious" if int(prediction) == 1 else "benign"
 
